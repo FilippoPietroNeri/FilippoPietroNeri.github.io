@@ -1,1 +1,3 @@
-https://librarymanagementpw.azurewebsites.net
+{
+	"api": "https://librarymanagementpw.azurewebsites.net/"
+}
