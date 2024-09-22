@@ -4,7 +4,7 @@ info:
   description: API for interacting with the database
   version: 1.0.0
 servers:
-  - url: http://localhost:3245
+  - url: https://3245-filippopietron-mysqlapi-kqukjbo15hh.ws-eu116.gitpod.io
 paths:
   /api/tables:
     get:
