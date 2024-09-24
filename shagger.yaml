@@ -124,3 +124,49 @@ paths:
                   message:
                     type: string
                     example: Row deleted successfully
+    put:
+      summary: Update a row in a specific table
+      parameters:
+        - name: table_name
+          in: path
+          required: true
+          description: The name of the table where the row is located
+          schema:
+            type: string
+      requestBody:
+        description: Data to update in the table
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: number
+                  description: Primary key of the row to update
+                categoria:
+                  type: string
+                  description: Updated category
+                immagine:
+                  type: string
+                  description: Updated image URL
+                nome:
+                  type: string
+                  description: Updated name
+                prezzo:
+                  type: string
+                  description: Updated price
+                quantita:
+                  type: number
+                  description: Updated quantity
+      responses:
+        '200':
+          description: Row updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Row updated successfully
